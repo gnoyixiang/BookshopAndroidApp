@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.asus.bookstore_team8.GridActivity"
+        android:id="@+id/container_scroll_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+   <SearchView
+       android:id="@+id/search"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:queryHint="Search by Title"
+       />
+
+   <GridView
+       android:id="@+id/gridview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:numColumns="3"
+       android:verticalSpacing="24dp"
+       android:horizontalSpacing="5dp"
+       android:stretchMode="columnWidth">
+
+   </GridView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BookStore Team8</string>
+    <string name="book_id">Book ID</string>
+    <string name="title">Title</string>
+    <string name="category">Category Name</string>
+    <string name="isbn">ISBN</string>
+    <string name="author">Author</string>
+    <string name="stock">Stock</string>
+    <string name="price">Price</string>
+    <string name="discount">Discount</string>
+</resources>
