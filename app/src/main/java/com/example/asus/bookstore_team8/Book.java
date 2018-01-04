@@ -1,10 +1,12 @@
 package com.example.asus.bookstore_team8;
 
+import android.net.wifi.WifiManager;
 import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,9 +16,11 @@ import java.util.List;
  * Created by ASUS on 17/12/20.
  */
 
-public class Book extends HashMap<String, String> {
+public class Book extends HashMap<String, String> implements Serializable{
 
-    final static String baseURL = "http://172.17.248.121/bookshop/Service1.svc/";
+    final static String baseURL = "http://" + "192.168.1.9" + "/bookshop/Service1.svc/";
+
+
 
     public Book(String bookID, String title, String categoryName, String isbn,String author,String stock,String price,String discount) {
         put("BookID", bookID);
@@ -56,6 +60,7 @@ public class Book extends HashMap<String, String> {
             }
         } catch (Exception e) {
             Log.e("Book.list()", "JSONArray error");
+            Log.e("ip", Utils.IP);
         }
         return(list);
     }

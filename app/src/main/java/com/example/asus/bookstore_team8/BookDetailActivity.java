@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
+import java.net.UnknownHostException;
 import java.util.List;
 
 public class BookDetailActivity extends AppCompatActivity implements View.OnClickListener{
@@ -23,6 +24,7 @@ public class BookDetailActivity extends AppCompatActivity implements View.OnClic
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_book_detail);
        // StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.LAX);
         Intent i = getIntent();

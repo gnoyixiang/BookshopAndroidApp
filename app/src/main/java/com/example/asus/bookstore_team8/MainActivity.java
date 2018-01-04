@@ -1,6 +1,8 @@
 package com.example.asus.bookstore_team8;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.StrictMode;
@@ -13,13 +15,16 @@ import android.widget.SimpleAdapter;
 
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity
+public class MainActivity extends Activity
         implements AdapterView.OnItemClickListener {
 
     @SuppressLint("StaticFieldLeak")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
        // StrictMode.setThreadPolicy(StrictMode.ThreadPolicy.LAX);
         setContentView(R.layout.activity_main);
         final ListView lv = (ListView) findViewById(R.id.listView1);
